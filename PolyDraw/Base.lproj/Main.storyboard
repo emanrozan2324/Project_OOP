@@ -49,6 +49,11 @@
                                             <action selector="undo:" destination="BYZ-38-t0r" id="u35-Kb-3nZ"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem title="Options" id="AKx-2p-8aE">
+                                        <connections>
+                                            <segue destination="Wi4-rK-qXy" kind="show" id="CpV-nh-hMc"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -67,6 +72,141 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="35.532233883058474"/>
+        </scene>
+        <!--Option View Controller-->
+        <scene sceneID="tG8-sF-apC">
+            <objects>
+                <viewController id="Wi4-rK-qXy" customClass="optionViewController" customModule="PolyDraw" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="csb-Xs-DAx"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wv7-uW-20M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ne8-he-5MA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line Witdth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDq-Iw-u2u">
+                                <rect key="frame" x="136" y="20" width="109" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hrU-3L-hSW">
+                                <rect key="frame" x="14" y="48.5" width="347" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5io-OY-rf0">
+                                <rect key="frame" x="141" y="103.5" width="92" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jMQ-me-ZY3">
+                                <rect key="frame" x="16" y="132" width="343" height="29"/>
+                                <segments>
+                                    <segment title="Red"/>
+                                    <segment title="Green"/>
+                                    <segment title="Blue"/>
+                                    <segment title="Yellow"/>
+                                    <segment title="Pink"/>
+                                    <segment title="Black"/>
+                                </segments>
+                            </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Onw-2z-CGd">
+                                <rect key="frame" x="166" y="223.5" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filled" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lcs-H2-faP">
+                                <rect key="frame" x="169" y="195" width="41" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Fill Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rye-Nd-gD7">
+                                <rect key="frame" x="152" y="283" width="70" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9p-5C-uzO">
+                                <rect key="frame" x="15" y="629" width="48" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="r10-7L-tfe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksw-Cp-uJs">
+                                <rect key="frame" x="325" y="629" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="save:" destination="Wi4-rK-qXy" eventType="touchUpInside" id="48u-me-yGV"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ENu-L0-lFY">
+                                <rect key="frame" x="16" y="319" width="343" height="29"/>
+                                <segments>
+                                    <segment title="Red"/>
+                                    <segment title="Green"/>
+                                    <segment title="Blue"/>
+                                    <segment title="Yellow"/>
+                                    <segment title="Pink"/>
+                                    <segment title="Black"/>
+                                </segments>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zic-f1-uDj" customClass="optionView" customModule="PolyDraw" customModuleProvider="target">
+                                <rect key="frame" x="16" y="355" width="343" height="226"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ksw-Cp-uJs" firstAttribute="leading" secondItem="Ne8-he-5MA" secondAttribute="leadingMargin" constant="309" id="393-tm-dJG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ksw-Cp-uJs" secondAttribute="trailing" id="4H8-vs-SQY"/>
+                            <constraint firstItem="Wv7-uW-20M" firstAttribute="top" secondItem="Zic-f1-uDj" secondAttribute="bottom" constant="86" id="4ME-a4-g3g"/>
+                            <constraint firstItem="NDq-Iw-u2u" firstAttribute="top" secondItem="csb-Xs-DAx" secondAttribute="bottom" id="53k-bK-Q3L"/>
+                            <constraint firstItem="hrU-3L-hSW" firstAttribute="top" secondItem="NDq-Iw-u2u" secondAttribute="bottom" constant="8" id="5Zx-Zl-9M8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hrU-3L-hSW" secondAttribute="trailing" id="7iK-I1-jmx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5io-OY-rf0" secondAttribute="trailing" constant="126" id="ImD-EE-RUn"/>
+                            <constraint firstItem="5io-OY-rf0" firstAttribute="top" secondItem="hrU-3L-hSW" secondAttribute="bottom" constant="25" id="JDj-2e-acR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lcs-H2-faP" secondAttribute="trailing" constant="149" id="JO0-lC-nEr"/>
+                            <constraint firstItem="Zic-f1-uDj" firstAttribute="top" secondItem="ENu-L0-lFY" secondAttribute="bottom" constant="8" id="LYZ-Ya-oBc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zic-f1-uDj" secondAttribute="trailing" id="MwB-G7-Tme"/>
+                            <constraint firstItem="Rye-Nd-gD7" firstAttribute="top" secondItem="Onw-2z-CGd" secondAttribute="bottom" constant="27" id="NZn-cJ-NOA"/>
+                            <constraint firstItem="ENu-L0-lFY" firstAttribute="top" secondItem="Rye-Nd-gD7" secondAttribute="bottom" constant="8" id="OAJ-sm-Mn2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="x9p-5C-uzO" secondAttribute="trailing" constant="296" id="Osi-J1-qrO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Onw-2z-CGd" secondAttribute="trailing" constant="144" id="Q4m-uZ-dXa"/>
+                            <constraint firstItem="x9p-5C-uzO" firstAttribute="top" secondItem="csb-Xs-DAx" secondAttribute="bottom" constant="609" id="Rsk-xE-Wvj"/>
+                            <constraint firstItem="5io-OY-rf0" firstAttribute="leading" secondItem="Ne8-he-5MA" secondAttribute="leadingMargin" constant="125" id="SLY-JI-2vb"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Zic-f1-uDj" secondAttribute="leading" id="VHn-hw-uLe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jMQ-me-ZY3" secondAttribute="trailing" id="WPs-Vl-smX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zic-f1-uDj" secondAttribute="trailing" id="XEh-Sm-Qml"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ENu-L0-lFY" secondAttribute="trailing" id="Y9d-GG-HlX"/>
+                            <constraint firstItem="ksw-Cp-uJs" firstAttribute="top" secondItem="csb-Xs-DAx" secondAttribute="bottom" constant="609" id="Yyl-4q-8lm"/>
+                            <constraint firstItem="Lcs-H2-faP" firstAttribute="top" secondItem="jMQ-me-ZY3" secondAttribute="bottom" constant="35" id="b2M-Qu-Q33"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ENu-L0-lFY" secondAttribute="leading" id="cV0-ZZ-jmf"/>
+                            <constraint firstItem="x9p-5C-uzO" firstAttribute="leading" secondItem="Ne8-he-5MA" secondAttribute="leadingMargin" constant="-1" id="cwf-MT-7j3"/>
+                            <constraint firstItem="NDq-Iw-u2u" firstAttribute="leading" secondItem="Ne8-he-5MA" secondAttribute="leadingMargin" constant="120" id="dcE-4f-zTk"/>
+                            <constraint firstItem="Rye-Nd-gD7" firstAttribute="leading" secondItem="Ne8-he-5MA" secondAttribute="leadingMargin" constant="136" id="f8E-vY-GgU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rye-Nd-gD7" secondAttribute="trailing" constant="137" id="k0W-Pk-QA2"/>
+                            <constraint firstItem="jMQ-me-ZY3" firstAttribute="top" secondItem="5io-OY-rf0" secondAttribute="bottom" constant="8" id="pdC-wE-egM"/>
+                            <constraint firstItem="Onw-2z-CGd" firstAttribute="top" secondItem="Lcs-H2-faP" secondAttribute="bottom" constant="8" id="prA-GD-LbU"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Zic-f1-uDj" secondAttribute="leading" id="sHc-DV-eyS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NDq-Iw-u2u" secondAttribute="trailing" constant="114" id="uWV-rq-5fz"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="jMQ-me-ZY3" secondAttribute="leading" id="ufZ-2x-dCT"/>
+                            <constraint firstItem="Lcs-H2-faP" firstAttribute="leading" secondItem="Ne8-he-5MA" secondAttribute="leadingMargin" constant="153" id="vZB-Fb-yYH"/>
+                            <constraint firstItem="Onw-2z-CGd" firstAttribute="leading" secondItem="Ne8-he-5MA" secondAttribute="leadingMargin" constant="150" id="wdJ-ni-mew"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="hrU-3L-hSW" secondAttribute="leading" id="xEm-SI-sLl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="filledColor" destination="ENu-L0-lFY" id="NI8-sL-h5Z"/>
+                        <outlet property="filledSwith" destination="Onw-2z-CGd" id="01k-WW-qib"/>
+                        <outlet property="lineColor" destination="jMQ-me-ZY3" id="NGp-dF-0PC"/>
+                        <outlet property="lineWitdh" destination="hrU-3L-hSW" id="cC0-vd-LTQ"/>
+                        <outlet property="preview" destination="Zic-f1-uDj" id="tne-CQ-ei7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KIe-PG-9T6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="733.60000000000002" y="35.532233883058474"/>
         </scene>
     </scenes>
 </document>

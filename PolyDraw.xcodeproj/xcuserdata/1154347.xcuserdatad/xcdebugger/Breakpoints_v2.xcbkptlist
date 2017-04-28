@@ -2,4 +2,99 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PolyDraw/optionView.swift"
+            timestampString = "515103614.143767"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "optionView"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PolyDraw.optionView.__deallocating_deinit"
+                  moduleName = "PolyDraw"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/1154347/Documents/Project_OOP/PolyDraw/optionView.swift"
+                  timestampString = "515103616.924743"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PolyDraw.optionView.init (frame : __C.CGRect) -&gt; PolyDraw.optionView"
+                  moduleName = "PolyDraw"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/1154347/Documents/Project_OOP/PolyDraw/optionView.swift"
+                  timestampString = "515103616.927841"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "210">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PolyDraw.optionView.__allocating_init (frame : __C.CGRect) -&gt; PolyDraw.optionView"
+                  moduleName = "PolyDraw"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/1154347/Documents/Project_OOP/PolyDraw/optionView.swift"
+                  timestampString = "515103616.929469"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PolyDraw.optionView.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;PolyDraw.optionView&gt;"
+                  moduleName = "PolyDraw"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/1154347/Documents/Project_OOP/PolyDraw/optionView.swift"
+                  timestampString = "515103616.930667"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PolyDraw.optionView.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;PolyDraw.optionView&gt;"
+                  moduleName = "PolyDraw"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/1154347/Documents/Project_OOP/PolyDraw/optionView.swift"
+                  timestampString = "515103616.931781"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "105">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
